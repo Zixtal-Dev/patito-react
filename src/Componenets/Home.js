@@ -1,6 +1,6 @@
-import NavBar from './Navbar';
+import NavBar from './NavBar';
 import './Home.css';
-import duckImage from '../Images/duck.jpg'
+import duckImage from '../Images/duck.jpg';
 import { useParams } from 'react-router-dom';
 import React from 'react';
 

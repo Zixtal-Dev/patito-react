@@ -14,7 +14,7 @@ function NavBar(){
 
             <div>
                 <a href={"http://localhost:3000/home/"+vendedor+"/"+sucursal}>Home</a>
-                <a href={"http://localhost:3000/product/"+vendedor+"/"+sucursal}>New Order</a>
+                <a href={"http://localhost:3000/client/"+vendedor+"/"+sucursal}>New Order</a>
                 <a href={"http://localhost:3000/order/"+vendedor+"/"+sucursal}>View Order</a>
                 <a href={"http://localhost:3000/"}>Exit</a>
             </div>

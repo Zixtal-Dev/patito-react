@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom';
-import "./Login.css"
+import './LogIn.css';
 import React, { useState } from "react";
 import OnlyBar from './OnlyBar';
 
@@ -9,7 +9,7 @@ import OnlyBar from './OnlyBar';
 
 function LogIn(){
     const[vendorName,setVendorName] = useState('');
-    const[sucursalId,setsucursalId] = useState('');
+    const[sucursalId,setSucursalId] = useState('');
     
     return(
       <React.Fragment>
@@ -35,7 +35,7 @@ function LogIn(){
               name="sucursalId" 
               value={sucursalId}
               autoComplete="off"
-              onChange={ev=>setsucursalId(ev.target.value)} >
+              onChange={ev=>setSucursalId(ev.target.value)} >
               </input>
            
         </form> 
