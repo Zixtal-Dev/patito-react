@@ -1,0 +1,11 @@
+.mylabel,
+.mybutton2 {
+  margin-top: 5rem;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: 'center';
+}
