@@ -9,6 +9,7 @@ import Client from './componenets/Client';
 import AddClient from './componenets/AddClient';
 import OrderDetails from './componenets/OrdersDetails'
 import ProductDetails from './componenets/ProductDetails'
+import UpdateOrder from './componenets/UpdateOrder'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<LogIn/>}></Route>
         <Route path='/product/:vendedor/:sucursal/:clientid' element={<Product/>}></Route>
         <Route path='/order/details/:vendedor/:sucursal/:clientid/:orderid/:sellername' element={<OrderDetails/>}></Route>
+        <Route path='/order/update/:vendedor/:sucursal/:clientid/:orderid/:sellername' element={<UpdateOrder/>}></Route>
         <Route path='/product/details/:vendedor/:sucursal/:clientid/:orderid/:sellername' element={<ProductDetails/>}></Route>
         <Route path='/order/:vendedor/:sucursal' element={<Order/>}></Route>
         <Route path='/home/:vendedor/:sucursal' element={<Home/>}></Route>

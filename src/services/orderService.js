@@ -7,6 +7,9 @@ const MAXID_BASE_REST_API_URL="http://localhost:8002/order/maxid";
 const ADD_PIVOT_TABLE_URL="http://localhost:8002/pivote/create/";
 const DELETE_PIVOT_URL="http://localhost:8002/order/pivot/delete/"
 const ADD_ORDER_URL="http://localhost:8002/order/create";
+const FIND_ORDER_BY_ID_URL="http://localhost:8002/order/show/";
+const UPDATE_ORDER_BY_ID_URL="http://localhost:8002/order/update/";
+const CHECK_MINUTES_URL="http://localhost:8002/date/"
 
 
 class orderService{
@@ -21,6 +24,10 @@ class orderService{
 
     getTotal(id){
         return axios.get(TOTAL_BASE_REST_API_URL+id);
+    }
+
+    getFindOrder(id){
+        return axios.get(FIND_ORDER_BY_ID_URL+id);
     }
     
     getMaxId(){
@@ -37,6 +44,14 @@ class orderService{
 
     createOrder(order){
         return axios.post(ADD_ORDER_URL,order);
+    }
+
+    DeleteEnabled(orderid){
+        return axios.get(CHECK_MINUTES_URL+orderid);
+    }
+
+    updateOrderByID(orderid,order){
+        return axios.put(UPDATE_ORDER_BY_ID_URL+orderid,order);
     }
 }
 

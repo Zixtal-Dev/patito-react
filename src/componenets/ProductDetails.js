@@ -3,6 +3,7 @@ import Details from "./Details";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import orderService from "../services/orderService";
 import clientService from "../services/clientService";
+import OnlyBar from "./OnlyBar"
 
 
 const ProductDetails=()=>{
@@ -57,6 +58,9 @@ const ProductDetails=()=>{
 
     return(
         <React.Fragment>
+            <div>
+                <OnlyBar></OnlyBar>
+            </div>
             <div>
                 <Details></Details>
             </div>

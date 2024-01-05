@@ -3,8 +3,11 @@ import NavBar from './NavBar';
 import "../componenets/LogIn.css";
 import { Link, useParams } from "react-router-dom";
 import orderService from '../services/orderService';
-const Order=()=>{
+import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'react-bootstrap';
+const Order =()=>{
     
+    
+
     const [orders,setOrders] =useState([]);
 
     const{vendedor}=useParams();
@@ -54,7 +57,7 @@ const Order=()=>{
                                     <Link to={"http://localhost:3000/order/details/"+vendedor+"/"+sucursal+"/"+order.clientid+"/"+ order.id+"/"+order.seller} className="btn btn-primary mb-2">Details</Link>           
                                 </td>
                                 <td>
-                                    <Link to='' className="btn btn-warning mb-2">Update</Link>           
+                                    <Link to={"http://localhost:3000/order/update/"+vendedor+"/"+sucursal+"/"+order.clientid+"/"+ order.id+"/"+order.seller} className="btn btn-warning mb-2">Update</Link>           
                                 </td>
                             </tr>
                         )
