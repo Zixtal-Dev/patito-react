@@ -51,7 +51,7 @@ const Order=()=>{
                                 <td>{order.idshop}</td>
                                 <td>{order.status}</td>
                                 <td>
-                                    <Link to={"http://localhost:3000/details/"+vendedor+"/"+sucursal+"/"+order.clientid+"/"+ order.id} className="btn btn-primary mb-2">Details</Link>           
+                                    <Link to={"http://localhost:3000/order/details/"+vendedor+"/"+sucursal+"/"+order.clientid+"/"+ order.id+"/"+order.seller} className="btn btn-primary mb-2">Details</Link>           
                                 </td>
                                 <td>
                                     <Link to='' className="btn btn-warning mb-2">Update</Link>           

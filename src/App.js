@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Home from './componenets/Home';
 import Client from './componenets/Client';
 import AddClient from './componenets/AddClient';
-import Details from './componenets/Details';
+import OrderDetails from './componenets/OrdersDetails'
+import ProductDetails from './componenets/ProductDetails'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
      <Routes>   
         <Route path='/' element={<LogIn/>}></Route>
         <Route path='/product/:vendedor/:sucursal/:clientid' element={<Product/>}></Route>
-        <Route path='/details/:vendedor/:sucursal/:clientid/:orderid' element={<Details/>}></Route>
+        <Route path='/order/details/:vendedor/:sucursal/:clientid/:orderid/:sellername' element={<OrderDetails/>}></Route>
+        <Route path='/product/details/:vendedor/:sucursal/:clientid/:orderid/:sellername' element={<ProductDetails/>}></Route>
         <Route path='/order/:vendedor/:sucursal' element={<Order/>}></Route>
         <Route path='/home/:vendedor/:sucursal' element={<Home/>}></Route>
         <Route path='/client/:vendedor/:sucursal' element={<Client/>}></Route>

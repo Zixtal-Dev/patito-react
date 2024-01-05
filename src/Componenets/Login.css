@@ -7,7 +7,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: 'center';
+  align-self: center;
+}
+
+.image-container2{
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  align-self: center;
 }
 
 .mybutton1 {
@@ -17,3 +24,52 @@
 .mybutton3{
   margin-left: 0.5rem;
 }
+
+.mynav {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+  
+}
+
+.mynav > h2 {
+  position: relative;
+  left: 60;
+}
+
+.nav-list {
+  list-style: none;
+  cursor: pointer;
+}
+
+.cart-count {
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px;
+  color: #000;
+}
+
+.footer{
+  position: static;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #39868B;
+  text-align: right;
+  color: white;
+  padding:.4rem;
+
+}
+.item-add-button {
+  background-color: #5cb85c;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  font-size: 11px;
+  cursor: pointer;
+  height: 20px;
+}
+
